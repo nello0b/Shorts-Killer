@@ -7,20 +7,19 @@ A Chrome plugin that redirect Youtube Shorts links to their original video URL
 
 ## Setup
 
-To set up the project, follow these steps:
+### Open the Chrome Extensions page:
 
-1. Clone the repository using `git clone https://github.com/nello0b/Art-Cropper.git`.
-2. Navigate to the project directory using `cd Art-Cropper`.
-3. Run `npm install` to install the dependencies.
-4. Set up a [Discord bot](https://discord.com/developers/applications) and give it the "MESSAGE CONTENT INTENT" in the "Discord Developer Portal".
-5. Take the token ID and place it in the `config-demo.json` file.
-6. Rename `config-demo.json` to `config.json`.
-7. Create an invite link for the bot by going to your Discord Developer Portal and clicking on your bot application. Under the "OAuth2" tab, select `bot` as the scope and then select the permissions: `Send Messages`,`Send Messages in Threads`, `Attach Files` and `Read Message History`. Copy the generated link and invite the bot to your Discord server.
-8. Start the bot using `node .`.
+1.  Open Google Chrome.
+2.  Navigate to chrome://extensions/ in the address bar.
+3.  Enable "Developer mode" at the top-right corner of the page.
 
-> (Note: If you want to run this bot efficiently and ensure it stays running even if the server crashes or restarts, it's recommended to use a process manager like PM2. With PM2, you can easily start, stop, and monitor the bot, and it will automatically restart if it crashes. To use PM2 with this bot, simply install PM2 on your server and start the bot using pm2 start index.js. For more information on PM2, refer to the [official documentation](https://pm2.keymetrics.io/docs/usage/quick-start/).)
+### Load the extension:
 
-If you see "Ready! Logged in as [Your Bot Name]" you are done and ready to crop!
+1.  Click the "Load unpacked" button, which appears after you enable Developer mode.
+2.  Navigate to the directory where you cloned or downloaded the repository.
+3.  Select the folder of the plugin and click "Open".
+
+The "Short Killer" extension should now be added to your Chrome browser and active. It will automatically redirect YouTube Shorts URLs to their equivalent standard video URLs whenever you encounter them on YouTube.
 
 ## Limitations
 
